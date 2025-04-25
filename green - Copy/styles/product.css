@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+main {
+    flex: 1;
+}
+.card {
+    display: flex;
+    
+    color: white;
+    border-radius: 10px;
+    padding: 20px 2rem;
+    align-items: center;
+}
+.left {
+    background: transparent;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.image-left{
+    border-radius: 12px;
+    width: 450px;
+    height: 570px;
+    background-image: url(../img/BASKET/image\ \(5\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+}
+.image-gallery img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transform: rotate(90deg);
+}
+.right {
+    width: 80%;
+    padding-left: 20px;
+    flex: 1;
+
+}
+.right h1 {
+    font-size: 5rem;
+    margin-top: 0;
+    text-align: center;
+}
+.right p{
+    font-size: 1.4rem;
+}
+.sizes button {
+    padding: 10px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: white;
+    color: #3d6f58;
+    font-weight: bold;
+}
+.colors button {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+    border: 2px solid white;
+}
+.buy-button-with-size{
+    text-decoration: none;
+    color: #3d6f58;
+    background: white;
+    padding: 6px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    border: 2px solid #3d6f58;
+    transition: ease-in 0.2s;
+}
+.buy-button-with-size:hover{
+    color: white;
+    background: #3d6f58;
+    border: 2px solid #ddd;
+      
+}
+.move-for-basket{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+.product-row{
+    margin-top: 1rem;
+    padding: 0 2rem;
+}
+.rec-title{
+    color: white;
+    padding: 2rem 1rem;
+}
+footer {
+    padding: 20px;    
+}

@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*:focus{
+    outline: 4px solid #82b89e;
+    border-radius: 8px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #3b755f;
+    
+}
+.active{
+    border-bottom: 2px solid #FFFFFF;
+}
+.main-header{
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Header har doim yuqorida turishi uchun */
+    width: 100%;
+    
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3b755f;
+    padding: 15px 30px;
+    color: white;
+    border-bottom: 2px solid #FFFFFF;
+    position: sticky; /* Scroll qilinganda ham joyida turadi */
+    top: 0;
+    z-index: 1000;
+}
+.logo{
+    font-size: 1.8rem;
+}
+.logo .green {
+    font-weight: bold;
+}
+
+.shop {
+    background-color: white;
+    color: #3b755f;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px 16px;
+    flex-grow: 1;
+    max-width: 650px;
+}
+
+.search-bar {
+    text-align: center;
+    border: none;
+    outline: none;
+    padding: 6px 0;
+    font-size: 14px;
+    width: 100%;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+.search-button i{
+    color: #3b755f;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.actions i{
+    padding-right: 0.5rem;
+}
+.basket {
+    color: white;
+    background-color: transparent;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    
+}
+
+.register {
+    background-color: #5a9e7e;
+    border: none;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.language select {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #3b755f;
+    padding: 8px 0;
+    position: sticky;
+    top: 62px; /* Header bilan to'qnash kelmasligi uchun */
+    z-index: 999;
+}
+
+.nav-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-item {
+    cursor: pointer;
+    font-size: 1.8rem;
+    transition: ease-in-out 0.2s;
+}
+.nav-item a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.nav-item:hover{
+    background-color: #5a9e7e;
+    border-bottom: 4px solid rgb(255, 255, 255,0.8);
+    padding: 0 12px;
+    border-radius: 12px;
+}
+.nav-item:active{
+    border-bottom: 2px solid #FFFFFF;
+}
+.main-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+.banner{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.banner img{
+    width: 100%;
+    
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+.product-section{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 0;
+    background-color: rgb(255, 255, 255,0.2);
+    border-radius: 16px;
+}
+.product-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 95%;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.product-card{
+    width: 18%;
+    background-color: #FFFFFF;
+    height: 45vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    border-radius: 12px;
+    margin: 0 1rem;
+}
+.product-card img{
+    width: 80%;
+}
+
+.slider{
+    color: #FFFFFF;
+    font-size: 2rem;
+}
+.product-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.arrow-right,.arrow-left{
+    display: block;
+  margin: 30px ;
+  width: 25px;
+  height: 25px;
+  border-top: 5px solid #FFFFFF;
+  border-left: 5px solid #FFF;
+}
+.arrow-right{
+    transform: rotate(135deg);
+}
+.arrow-left{
+    transform: rotate(-45deg);
+}
